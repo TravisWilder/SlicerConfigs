@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>open -n -a PrusaSlicer.app --args --datadir /Users/andreas/Desktop/SlicerConfigs/MK3S</string>
+					<string>open -n -a PrusaSlicer.app --args --datadir /Users/andreas/Desktop/SlicerConfigs/PrusaSlicer_V2</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
