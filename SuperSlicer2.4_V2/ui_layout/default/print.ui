@@ -2,7 +2,7 @@
 page:Perimeters & Shell:shell
 group:Vertical shells
 	setting:width$6:perimeters
-	setting:tags$Simple$SuSi:script:float:depends$perimeter_spacing$external_perimeter_spacing:label$Wall Thickness:tooltip$Change the perimeter extrusion width to ensure that there is an exact number of perimeters for this wall value. It won't put the width below the nozzle diameter, and up to double the size of the nozzle.:s_wall_thickness
+	setting:tags$Simple$Expert$SuSi:script:float:depends$perimeter_spacing$external_perimeter_spacing:label$Wall Thickness:tooltip$Change the perimeter extrusion widths to ensure that there is an exact number of perimeters for this wall thickness value. It won't put the perimeter width below the nozzle diameter, and up to double.\nNote that the value displayed is just a view of the current perimeter thickness, like the info text below. The number of perimeters used to compute this value is one loop, or the custom variable 'wall_thickness_lines' (advanced mode) if defined.\nIf the value is too low, it will revert the widths to the saved value.\nIf the value is set to 0, it will show 0.:s_wall_thickness
 	setting:spiral_vase
 	recommended_thin_wall_thickness_description
 group:Horizontal shells
@@ -277,8 +277,10 @@ group:label_width$8:sidetext_width$7:Speed for print moves
 		setting:width$4:bridge_speed
 		setting:width$4:bridge_speed_internal
 		setting:width$4:overhangs_speed
-	line:Thin extrusions speed
-		setting:width$4:gap_fill_speed
+	line:Gap fill speed
+		setting:width$4:label$maximum speed:gap_fill_speed
+		setting:width$4:label$Cap with:sidetext$% of perimeter flow:sidetext_width$20:gap_fill_flow_match_perimeter
+	line:Other speed
 		setting:width$4:thin_walls_speed
 		setting:width$4:ironing_speed
 group:Speed for non-print moves
@@ -319,7 +321,7 @@ group:label_width$9:sidetext_width$8:Acceleration control (advanced)
 		setting:width$4:bridge_acceleration
 		setting:width$4:bridge_internal_acceleration
 		setting:width$4:overhangs_acceleration
-	line:Thin extrusions acceleration
+	line:Other extrusions acceleration
 		setting:width$4:gap_fill_acceleration
 		setting:width$4:thin_walls_acceleration
 		setting:width$4:ironing_acceleration
