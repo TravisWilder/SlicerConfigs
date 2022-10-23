@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>open -n -a SuperSlicer2.4.app --args --datadir /Users/andreas/Desktop/SlicerConfigs/SuperSlicer2.4_V2</string>
+					<string>open -n -a SuperSlicer.app --args --datadir /Users/andreas/Desktop/SlicerConfigs/SuperSlicer2.4_V2</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
