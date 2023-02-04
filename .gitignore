@@ -1,2 +1,4 @@
 
-SuperSlicer_V2/cache/*.lock
+PrusaSlicer_V26/cache/*
+*.lock
+*.cereal
