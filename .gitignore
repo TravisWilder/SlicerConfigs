@@ -1,4 +1,5 @@
 
-PrusaSlicer_V26/cache/*
+**/cache/*
+**/snapshots/*
 *.lock
-*.cereal
+.DS_Store
